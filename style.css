@@ -8,22 +8,32 @@ body {
   color: #443835;
 }
 
-header {
+.section-header {
   text-align: center;
 }
 
-header .title {
-  font-size: 3rem;
+.section-header .title {
+  font-size: 2rem;
   text-shadow: 1px 1px beige;
 }
 
-header img {
+.section-header .cover {
+  margin: 0 auto;
   width: 95%;
-  max-width: 800px;
+  height: 95%;
+  max-width: 500px;
+  overflow: hidden;
+}
+
+.section-header .cover-image {
+  position: relative;
+  left: -15%;
+  top: -40px;
+  width: 140%;
 }
 
 .section {
-  padding: 2rem;
+  padding: 1rem;
   overflow: auto;
   border-bottom: 1px solid rgb(200, 200, 180);
 }
@@ -60,4 +70,6 @@ header img {
 
 @media (min-width: 600px) {
   .content, .image { width: 50%; }
+  .section { padding: 2rem; }
+  .section-header .title { font-size: 3rem; }
 }
